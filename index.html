@@ -10,6 +10,7 @@
       src="https://kit.fontawesome.com/8d2343d8e8.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,8 +19,32 @@
     />
   </head>
   <body>
+    <div id="wrap">
+      <div id="popupOff">
+        <i
+          id="popupBtn"
+          class="fa-solid fa-bars fa-xl"
+          style="color: #000000"
+        ></i>
+        <ul>
+          <a href="#"><li>How We Work</li></a>
+          <a href="#"><li>Our Work</li></a>
+          <a href="#"><li>Pricing</li></a>
+          <a href="#"><li>Contact Us</li></a>
+        </ul>
+      </div>
+    </div>
     <!--header-->
+
     <header class="header">
+      <div id="popupOn">
+        <i
+          id="popupBtn"
+          class="fa-solid fa-bars fa-xl"
+          style="color: #ffffff"
+        ></i>
+      </div>
+
       <div class="headerContents">
         <a href="#"
           ><h1><img src="img/SVG/ THunderBolt.svg" /></h1
@@ -253,7 +278,28 @@
     <script>
       document.getElementById("Cloud").addEventListener("click", function () {
         document.getElementById("Thunder").style.display = "block";
+        console.log("click");
       });
+
+      let wrap = document.getElementById("wrap");
+      let popupOn = document.getElementById("popupOn");
+      let popupOff = document.getElementById("popupOff");
+      let isSel = true;
+
+      popupOn.addEventListener("click", onClick);
+      popupOff.addEventListener("click", onClick);
+
+      function onClick(addEventListener) {
+        console.log("click");
+
+        if (isSel == true) {
+          isSel = false;
+          gsap.to(wrap, { left: 0, duration: 0.4 });
+        } else {
+          isSel = true;
+          gsap.to(wrap, { left: -250, duration: 0.4 });
+        }
+      }
     </script>
   </body>
 </html>

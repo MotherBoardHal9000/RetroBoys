@@ -52,6 +52,43 @@ header {
   background-color: #308ac5;
 }
 
+#wrap {
+  width: 250px;
+  height: 100vh;
+  background-color: #edf2f7;
+  left: -250px;
+  position: fixed;
+  z-index: 10;
+}
+
+#wrap ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 30px;
+  position: absolute;
+  left: 0px;
+  width: 130px;
+}
+
+#wrap li {
+  color: black;
+  list-style: none;
+  width: 130px;
+}
+
+#popupOn {
+  display: none;
+  width: 60px;
+  height: 60px;
+}
+
+#popupOff {
+  display: none;
+  width: 60px;
+  height: 60px;
+}
+
 .headerContents {
   width: 1600px;
   height: 130px;
@@ -545,6 +582,23 @@ header ul li {
 
 /*@Tablet,Mobile 1200px*/
 @media (min-width: 600px) and (max-width: 1200px) {
+  #popupOn {
+    display: block;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    padding: 40px;
+    cursor: pointer;
+  }
+  #popupOff {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    padding: 40px;
+    position: absolute;
+    cursor: pointer;
+  }
+
   .header {
     min-width: 80vw;
     position: relative;
@@ -984,6 +1038,20 @@ header ul li {
 
 /*@Tablet,Mobile 768px*/
 @media (min-width: 0px) and (max-width: 600px) {
+  #popupOn {
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 30px;
+    cursor: pointer;
+  }
+
+  #popupOff {
+    display: block;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+  }
   .header {
     min-width: 80vw;
     position: relative;
