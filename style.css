@@ -59,6 +59,7 @@ header {
   left: -250px;
   position: fixed;
   z-index: 10;
+  display: none;
 }
 
 #wrap ul {
@@ -582,6 +583,32 @@ header ul li {
 
 /*@Tablet,Mobile 1200px*/
 @media (min-width: 600px) and (max-width: 1200px) {
+  #wrap {
+    width: 250px;
+    height: 100vh;
+    background-color: #edf2f7;
+    left: -250px;
+    position: fixed;
+    z-index: 10;
+    display: block;
+  }
+
+  #wrap ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 30px;
+    position: absolute;
+    left: 0px;
+    width: 130px;
+  }
+
+  #wrap li {
+    color: black;
+    list-style: none;
+    width: 130px;
+  }
+
   #popupOn {
     display: block;
     width: 60px;
@@ -1038,11 +1065,37 @@ header ul li {
 
 /*@Tablet,Mobile 768px*/
 @media (min-width: 0px) and (max-width: 600px) {
+  #wrap {
+    width: 250px;
+    height: 100vh;
+    background-color: #edf2f7;
+    left: -250px;
+    position: fixed;
+    z-index: 10;
+    display: block;
+  }
+
+  #wrap ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 30px;
+    position: absolute;
+    left: 0px;
+    width: 130px;
+  }
+
+  #wrap li {
+    color: black;
+    list-style: none;
+    width: 130px;
+  }
+
   #popupOn {
     display: block;
     width: 60px;
     height: 60px;
-    padding: 30px;
+    padding: 40px;
     cursor: pointer;
   }
 
@@ -1050,6 +1103,7 @@ header ul li {
     display: block;
     width: 60px;
     height: 60px;
+    padding: 40px;
     cursor: pointer;
   }
   .header {
