@@ -310,7 +310,7 @@ header ul li {
 }
 
 .section4Contents {
-  width: 1600px;
+  min-width: 1600px;
   max-width: 100vw;
   height: fit-content;
   margin: 0 auto;
@@ -581,16 +581,16 @@ header ul li {
   color: white;
 }
 
-/*@Tablet,Mobile 1200px*/
-@media (min-width: 600px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1200px) {
   #wrap {
-    width: 250px;
-    height: 100vh;
+    min-width: 250px;
+    height: 100%;
     background-color: #edf2f7;
     left: -250px;
     position: fixed;
     z-index: 10;
     display: block;
+    overflow: hidden;
   }
 
   #wrap ul {
@@ -619,15 +619,15 @@ header ul li {
   }
   #popupOff {
     display: block;
-    width: fit-content;
-    height: fit-content;
+    width: 60px;
+    height: 60px;
     padding: 40px;
     position: absolute;
     cursor: pointer;
   }
 
   .header {
-    min-width: 80vw;
+    min-width: 100vw;
     position: relative;
   }
 
@@ -656,8 +656,8 @@ header ul li {
   }
 
   .section1Contents #DEvil {
-    width: 380px;
-    height: 380px;
+    width: 300px;
+    height: 300px;
     position: absolute;
     left: 95%;
     transform: translateX(-95%);
@@ -685,9 +685,9 @@ header ul li {
   }
 
   .redBrickBoard h2 {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     font-weight: 400;
-    line-height: 100px;
+    line-height: 50px;
   }
 
   .redBrickBoard p {
@@ -709,10 +709,10 @@ header ul li {
   }
 
   #Cloud img:nth-child(1) {
-    width: 220px;
-    height: 200px;
+    width: 170px;
+    height: 80px;
     position: absolute;
-    bottom: 200px;
+    bottom: 250px;
     left: -100px;
   }
 
@@ -720,7 +720,7 @@ header ul li {
     width: 120px;
     height: 100px;
     position: absolute;
-    right: -70px;
+    right: -30px;
     top: 10px;
     z-index: 10;
   }
@@ -730,7 +730,7 @@ header ul li {
     width: 85px;
     height: 120px;
     top: 70px;
-    right: -51px;
+    right: -31px;
     display: none;
   }
 
@@ -741,12 +741,12 @@ header ul li {
   }
 
   .section2 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 130px;
+    bottom: 120px;
     text-align: center;
   }
 
@@ -761,14 +761,32 @@ header ul li {
     height: 1600px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  .section3Contents h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .character-boxes {
-    width: 87%;
+    width: 60vw;
     height: 390px;
     background-color: #edf2f7;
     position: relative;
+    margin-left: 0px;
+    padding-left: 0px;
+    font-size: medium;
+  }
+
+  .character-boxes img {
+    width: 250px;
+    height: 250px;
+    border: none;
   }
 
   .character-boxes:nth-child(3) {
@@ -777,21 +795,22 @@ header ul li {
   /*section4*/
   .section4 {
     min-width: 100vw;
-    height: 2700px;
+    height: 1700px;
     position: relative;
   }
 
   .section4Contents {
     min-width: 80vw;
     max-width: 80vw;
-    height: 100%;
+    height: 1000px;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
   }
   .section4Contents .margin {
     display: none;
@@ -803,14 +822,13 @@ header ul li {
 
   .section4Box1 img {
     min-width: 80vw;
-    max-width: 80vw;
-    height: 600px;
+    width: 80vw;
+    height: 300px;
   }
 
   .section4Side1 {
     min-width: 80vw;
-    max-width: 90vw;
-    height: 400px;
+    height: 300px;
     background-color: #ff3535;
     color: #edf2f7;
     padding: 8%;
@@ -818,14 +836,13 @@ header ul li {
 
   .section4Box2 {
     min-width: 80vw;
-    max-width: 80vw;
     height: 600px;
   }
 
   .section4Box2 img {
     min-width: 80vw;
     max-width: 90vw;
-    height: 600px;
+    height: 300px;
   }
 
   .section4Contents h2 ~ h2 {
@@ -834,8 +851,7 @@ header ul li {
 
   .section4Side2 {
     min-width: 80vw;
-    max-width: 90vw;
-    height: 400px;
+    height: 300px;
     background-color: #ffd735;
     color: var(--color-white);
     padding: 8%;
@@ -843,8 +859,7 @@ header ul li {
 
   .section4Box3 img {
     min-width: 80vw;
-    max-width: 90vw;
-    height: 600px;
+    height: 300px;
   }
 
   .section4Box3 h2 {
@@ -853,8 +868,7 @@ header ul li {
 
   .section4Side3 {
     min-width: 80vw;
-    max-width: 90vw;
-    height: 397px;
+    height: 300px;
     background-color: #8543a0;
     color: var(--color-white);
     padding: 8%;
@@ -863,7 +877,7 @@ header ul li {
   /*sectrion5*/
   .section5 {
     min-width: 100vw;
-    height: 2950px;
+    height: 1800px;
     position: relative;
   }
 
@@ -876,12 +890,12 @@ header ul li {
   }
 
   .section5Contents h2 {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 400;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 45px;
+    margin-top: 40px;
   }
 
   .PlanBox {
@@ -893,16 +907,16 @@ header ul li {
   }
 
   .PlanBox h3 {
-    font-size: 40px;
+    font-size: 1.3rem;
     font-weight: 400;
     float: left;
     padding: 35px;
   }
 
   .PlanBox div {
-    width: 500px;
-    height: 680px;
-    background-repeat: no-repeat;
+    width: 80vw;
+    height: 400px;
+    background-repeat: repeat;
     background-color: var(--color-gray);
     background-image: url(./img/SVG/Minibrick.svg);
   }
@@ -914,15 +928,16 @@ header ul li {
   .PlanBox ul {
     display: flex;
     flex-direction: column;
-    gap: 60px;
-    width: 400px;
-    margin-left: 20px;
+    gap: 20px;
+    width: 300px;
+    margin-left: 0px;
+    list-style: none;
   }
 
   /*footer*/
   .footer {
     min-width: 100vw;
-    height: 1200px;
+    height: 1600px;
     border-top: 7px solid black;
     background-color: #308ac5;
   }
@@ -937,7 +952,7 @@ header ul li {
 
   .footerBack {
     width: 80vw;
-    height: 600px;
+    height: 400px;
     border-radius: 5px;
     background-color: #edf2f7;
     border: 7px solid black;
@@ -947,12 +962,12 @@ header ul li {
   }
 
   .footerBack img {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 360px;
+    bottom: 220px;
   }
 
   .footerBack a {
@@ -961,7 +976,7 @@ header ul li {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 65px;
+    bottom: 165px;
     background-color: #308ac5;
     color: #ffffff;
     align-content: center;
@@ -971,7 +986,7 @@ header ul li {
 
   .footerContents {
     min-width: 80vw;
-    height: 800px;
+    height: 57%;
     position: absolute;
     top: 230px;
     left: 50%;
@@ -993,10 +1008,10 @@ header ul li {
   }
 
   .footerBack h2 {
-    font-size: 50px;
+    font-size: 1.4rem;
     font-weight: 400;
+    margin-top: 130px;
     text-align: center;
-    margin-top: 170px;
   }
 
   .icon {
@@ -1012,19 +1027,18 @@ header ul li {
   }
   .footerContents2 {
     min-width: 80vw;
-    max-width: 80vw;
     height: 400px;
     color: white;
     bottom: 0px;
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 300px;
     grid-template-rows: 300px;
     text-wrap: nowrap;
   }
 
   .footerContents2 h3 {
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 500;
   }
 
   .Agency {
@@ -1032,6 +1046,7 @@ header ul li {
     flex-direction: column;
     gap: 30px;
     width: 200px;
+    margin-bottom: 40px;
   }
 
   .Services {
@@ -1039,17 +1054,18 @@ header ul li {
     flex-direction: column;
     gap: 30px;
     width: 200px;
+    margin-bottom: 40px;
   }
 
   .footerContents2 input {
-    width: 380px;
+    width: 300px;
     height: 50px;
     border: 1px solid white;
     background-color: #e7e7e7;
   }
 
   .footerContents2 button {
-    width: 380px;
+    width: 300px;
     height: 50px;
     border: 1px solid white;
     background-color: #ffffff;
@@ -1064,15 +1080,16 @@ header ul li {
 }
 
 /*@Tablet,Mobile 768px*/
-@media (min-width: 0px) and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   #wrap {
-    width: 250px;
-    height: 100vh;
+    min-width: 250px;
+    height: 100%;
     background-color: #edf2f7;
     left: -250px;
     position: fixed;
     z-index: 10;
     display: block;
+    overflow: hidden;
   }
 
   #wrap ul {
@@ -1095,19 +1112,21 @@ header ul li {
     display: block;
     width: 60px;
     height: 60px;
+    position: absolute;
     padding: 40px;
     cursor: pointer;
   }
-
   #popupOff {
     display: block;
     width: 60px;
     height: 60px;
     padding: 40px;
+    position: absolute;
     cursor: pointer;
   }
+
   .header {
-    min-width: 80vw;
+    min-width: 100vw;
     position: relative;
   }
 
@@ -1120,15 +1139,15 @@ header ul li {
   }
 
   .section1 {
-    min-width: 80vw;
-    height: 1200px;
+    min-width: 100vw;
+    height: 1000px;
     background-color: #308ac5;
     position: relative;
   }
 
   .section1Contents {
     min-width: 80vw;
-    height: 1200px;
+    height: 1000px;
     position: absolute;
     left: 50%;
     top: 100px;
@@ -1136,8 +1155,8 @@ header ul li {
   }
 
   .section1Contents #DEvil {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     position: absolute;
     left: 95%;
     transform: translateX(-95%);
@@ -1148,14 +1167,14 @@ header ul li {
     background-image: url(./img/SVG/redBrickBackMobile.svg);
     background-repeat: repeat;
     min-width: 80vw;
-    height: 950px;
+    height: 800px;
     position: absolute;
   }
 
   .redBrickBoard {
     min-width: 80vw;
     max-width: 90vw;
-    height: 850px;
+    height: 680px;
     background-color: var(--color-white);
     border: 5px solid var(--color-black);
     position: absolute;
@@ -1165,15 +1184,14 @@ header ul li {
   }
 
   .redBrickBoard h2 {
-    font-size: 4.3rem;
+    font-size: 2.5rem;
     font-weight: 400;
-    line-height: 100px;
+    line-height: 50px;
   }
 
   .redBrickBoard p {
     color: grey;
-    font-size: 0.7rem;
-    margin-top: 20px;
+    font-size: 0.8rem;
   }
 
   .redBrickBoard a {
@@ -1186,32 +1204,32 @@ header ul li {
     color: #edf2f7;
     align-content: center;
     padding-left: 30px;
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   #Cloud img:nth-child(1) {
-    width: 220px;
-    height: 200px;
+    width: 170px;
+    height: 80px;
     position: absolute;
-    bottom: 200px;
-    left: -120px;
+    bottom: 250px;
+    left: -100px;
   }
 
   #Cloud img:nth-child(2) {
     width: 120px;
     height: 100px;
     position: absolute;
-    right: -60px;
-    top: 20px;
+    right: -30px;
+    top: 10px;
     z-index: 10;
   }
 
   .Thunder {
     position: absolute;
-    width: 80px;
-    height: 100px;
-    top: 80px;
-    right: -55px;
+    width: 85px;
+    height: 120px;
+    top: 70px;
+    right: -31px;
     display: none;
   }
 
@@ -1222,12 +1240,12 @@ header ul li {
   }
 
   .section2 h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 130px;
+    bottom: 120px;
     text-align: center;
   }
 
@@ -1242,15 +1260,31 @@ header ul li {
     height: 1600px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+  }
+
+  .section3Contents h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .character-boxes {
-    width: 87%;
+    width: 60vw;
     height: 390px;
     background-color: #edf2f7;
     position: relative;
-    font-size: 0.8rem;
+    margin-left: 0px;
+    padding-left: 0px;
+    font-size: medium;
+  }
+
+  .character-boxes img {
+    width: 250px;
+    height: 250px;
   }
 
   .character-boxes:nth-child(3) {
@@ -1259,21 +1293,22 @@ header ul li {
   /*section4*/
   .section4 {
     min-width: 100vw;
-    height: 2700px;
+    height: 1700px;
     position: relative;
   }
 
   .section4Contents {
     min-width: 80vw;
     max-width: 80vw;
-    height: 100%;
+    height: 1000px;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
   }
   .section4Contents .margin {
     display: none;
@@ -1285,14 +1320,13 @@ header ul li {
 
   .section4Box1 img {
     min-width: 80vw;
-    max-width: 80vw;
-    height: 400px;
+    width: 80vw;
+    height: 300px;
   }
 
   .section4Side1 {
     min-width: 80vw;
-    max-width: 90vw;
-    height: 400px;
+    height: 300px;
     background-color: #ff3535;
     color: #edf2f7;
     padding: 8%;
@@ -1300,14 +1334,13 @@ header ul li {
 
   .section4Box2 {
     min-width: 80vw;
-    max-width: 80vw;
     height: 600px;
   }
 
   .section4Box2 img {
     min-width: 80vw;
     max-width: 90vw;
-    height: 400px;
+    height: 300px;
   }
 
   .section4Contents h2 ~ h2 {
@@ -1316,21 +1349,15 @@ header ul li {
 
   .section4Side2 {
     min-width: 80vw;
-    max-width: 90vw;
-    height: 400px;
+    height: 300px;
     background-color: #ffd735;
     color: var(--color-white);
     padding: 8%;
-    position: relative;
-    transform: translateY(-50%);
   }
 
   .section4Box3 img {
     min-width: 80vw;
-    max-width: 90vw;
-    height: 400px;
-    position: relative;
-    transform: translateY(-50%);
+    height: 300px;
   }
 
   .section4Box3 h2 {
@@ -1339,20 +1366,16 @@ header ul li {
 
   .section4Side3 {
     min-width: 80vw;
-    max-width: 90vw;
-    height: 397px;
+    height: 300px;
     background-color: #8543a0;
     color: var(--color-white);
     padding: 8%;
-    position: relative;
-    transform: translateY(-50%);
-    font-size: 1rem;
   }
 
   /*sectrion5*/
   .section5 {
     min-width: 100vw;
-    height: 2750px;
+    height: 1800px;
     position: relative;
   }
 
@@ -1365,13 +1388,12 @@ header ul li {
   }
 
   .section5Contents h2 {
-    width: fit-content;
-    font-size: 0.5rem;
+    font-size: 1rem;
     font-weight: 400;
     position: absolute;
-    top: -150px;
-    text-align: center;
-    box-sizing: border-box;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 40px;
   }
 
   .PlanBox {
@@ -1383,16 +1405,16 @@ header ul li {
   }
 
   .PlanBox h3 {
-    font-size: 40px;
+    font-size: 1.3rem;
     font-weight: 400;
     float: left;
     padding: 35px;
   }
 
   .PlanBox div {
-    width: 500px;
-    height: 680px;
-    background-repeat: no-repeat;
+    width: 80vw;
+    height: 100%;
+    background-repeat: repeat;
     background-color: var(--color-gray);
     background-image: url(./img/SVG/Minibrick.svg);
   }
@@ -1404,15 +1426,16 @@ header ul li {
   .PlanBox ul {
     display: flex;
     flex-direction: column;
-    gap: 60px;
-    width: 400px;
-    margin-left: 20px;
+    gap: 20px;
+    width: 300px;
+    margin-left: 0px;
+    list-style: none;
   }
 
   /*footer*/
   .footer {
     min-width: 100vw;
-    height: 1200px;
+    height: 1600px;
     border-top: 7px solid black;
     background-color: #308ac5;
   }
@@ -1427,7 +1450,7 @@ header ul li {
 
   .footerBack {
     width: 80vw;
-    height: 600px;
+    height: 400px;
     border-radius: 5px;
     background-color: #edf2f7;
     border: 7px solid black;
@@ -1437,12 +1460,12 @@ header ul li {
   }
 
   .footerBack img {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 360px;
+    bottom: 220px;
   }
 
   .footerBack a {
@@ -1451,7 +1474,7 @@ header ul li {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 65px;
+    bottom: 165px;
     background-color: #308ac5;
     color: #ffffff;
     align-content: center;
@@ -1461,7 +1484,7 @@ header ul li {
 
   .footerContents {
     min-width: 80vw;
-    height: 800px;
+    height: 57%;
     position: absolute;
     top: 230px;
     left: 50%;
@@ -1483,10 +1506,10 @@ header ul li {
   }
 
   .footerBack h2 {
-    font-size: 50px;
+    font-size: 1.4rem;
     font-weight: 400;
+    margin-top: 130px;
     text-align: center;
-    margin-top: 170px;
   }
 
   .icon {
@@ -1502,19 +1525,18 @@ header ul li {
   }
   .footerContents2 {
     min-width: 80vw;
-    max-width: 80vw;
     height: 400px;
     color: white;
     bottom: 0px;
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 300px;
     grid-template-rows: 300px;
     text-wrap: nowrap;
   }
 
   .footerContents2 h3 {
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1rem;
+    font-weight: 500;
   }
 
   .Agency {
@@ -1522,6 +1544,7 @@ header ul li {
     flex-direction: column;
     gap: 30px;
     width: 200px;
+    margin-bottom: 40px;
   }
 
   .Services {
@@ -1529,17 +1552,18 @@ header ul li {
     flex-direction: column;
     gap: 30px;
     width: 200px;
+    margin-bottom: 40px;
   }
 
   .footerContents2 input {
-    width: 380px;
+    width: 300px;
     height: 50px;
     border: 1px solid white;
     background-color: #e7e7e7;
   }
 
   .footerContents2 button {
-    width: 380px;
+    width: 300px;
     height: 50px;
     border: 1px solid white;
     background-color: #ffffff;
