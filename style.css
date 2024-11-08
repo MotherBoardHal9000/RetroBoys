@@ -45,8 +45,7 @@ div {
 }
 
 header {
-  min-width: 1920px;
-  max-width: 100vw;
+  width: 100vw;
   height: 130px;
   position: relative;
   background-color: #308ac5;
@@ -124,15 +123,14 @@ header ul li {
 }
 /*section1*/
 .section1 {
-  min-width: 1920px;
-  max-width: 100vw;
+  width: 100vw;
   height: 1000px;
   background-color: #308ac5;
   position: relative;
 }
 
 .section1Contents {
-  min-width: 1600px;
+  width: 1600px;
   height: 1000px;
   position: absolute;
   left: 50%;
@@ -158,7 +156,7 @@ header ul li {
 }
 
 .redBrickBoard {
-  min-width: 1600px;
+  width: 1600px;
   height: 680px;
   background-color: var(--color-white);
   border: 5px solid var(--color-black);
@@ -220,8 +218,7 @@ header ul li {
 
 /*section2*/
 .section2 {
-  min-width: 1920px;
-  max-width: 100vw;
+  width: 100vw;
   height: 400px;
   position: relative;
 }
@@ -237,8 +234,7 @@ header ul li {
 }
 /*section3*/
 .section3 {
-  min-width: 1920px;
-  max-width: 100vw;
+  width: 100vw;
   height: 700px;
   position: relative;
 }
@@ -438,7 +434,6 @@ header ul li {
 }
 
 .PlanBox ul li {
-  border: 1px solid red;
   font-size: 1.3rem;
 }
 
