@@ -1138,7 +1138,7 @@ header ul li {
   }
 
   .section1 {
-    width: 100vw;
+    min-width: 100vw;
     height: 900px;
     background-color: #308ac5;
     position: relative;
@@ -1165,7 +1165,7 @@ header ul li {
   .redBrick {
     background-image: url(./img/SVG/redBrickBackMobile.svg);
     background-repeat: repeat;
-    width: 80vw;
+    min-width: 80vw;
     height: 760px;
     position: absolute;
   }
@@ -1248,7 +1248,7 @@ header ul li {
   }
 
   .section3 {
-    width: 100vw;
+    min-width: 100vw;
     height: 1600px;
     position: relative;
   }
@@ -1297,13 +1297,14 @@ header ul li {
   }
   /*section4*/
   .section4 {
-    width: 100vw;
+    min-width: 100vw;
     height: 1700px;
     position: relative;
   }
 
   .section4Contents {
-    width: 80vw;
+    min-width: 80vw;
+    max-width: 80vw;
     height: 1000px;
     position: absolute;
     display: flex;
