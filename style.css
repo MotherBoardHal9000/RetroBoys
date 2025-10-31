@@ -29,6 +29,11 @@ span {
   transform: rotate(0.03deg);
 }
 
+::-webkit-scrollbar {
+   display: none;
+}
+
+
 /*20px이 1rem이 된다*/
 html {
   font-size: 20px;
